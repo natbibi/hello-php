@@ -12,7 +12,9 @@
     <title>Success</title>
 </head>
 <body>
+<div class="container">
 <p>Congrats on picking a strong password!</p>
 <a href="helloworld.php">Try Again!</a>
+</div>
 </body>
 </html>

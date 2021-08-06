@@ -49,7 +49,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 
-<div>
+<div class="container">
     <?php
     echo '<h1>Pick a strong password to continue:</h1>';
     ?>
