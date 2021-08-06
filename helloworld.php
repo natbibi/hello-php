@@ -1,6 +1,26 @@
 <?php
 $password = "";
 $password_err = "";
+
+if($_SERVER["REQUEST_METHOD"] == "POST") {
+    $password = $_POST["password"];
+
+    if(strlen($password)<8) {
+        $password_err = "Your password must contain at least 8 Characters!";
+    }
+    elseif(!preg_match("#[0-9]+#",$password)) {
+        $password_err = "Your password must contain at least 1 Number!";
+    }
+    elseif(!preg_match("#[A-Z]+#",$password)) {
+        $password_err = "Your password must contain at least 1 Capital Letter!";
+    }
+    elseif(!preg_match("#[a-z]+#",$password)) {
+        $password_err = "Your password must contain at least 1 Lowercase Letter!";
+    }else{
+        $password_err = "Hmmm";
+    }
+}
+
 ?>
 
 <head>
