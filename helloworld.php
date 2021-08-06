@@ -18,6 +18,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $password_err = "Your password must contain at least 1 Lowercase Letter!";
     }else{
         $password_err = "Hmmm";
+        header("Location: success.php");
+        exit;
     }
 }
 
