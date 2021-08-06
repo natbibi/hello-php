@@ -13,7 +13,7 @@
 </head>
 <body>
 <div class="container">
-<p>Congrats on picking a strong password!</p>
+<h1>Congrats on picking a strong password!</h1>
 <a href="helloworld.php">Try Again!</a>
 </div>
 </body>
