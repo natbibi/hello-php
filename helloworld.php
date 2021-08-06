@@ -16,7 +16,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     elseif(!preg_match("#[a-z]+#",$password)) {
         $password_err = "Your password must contain at least 1 Lowercase Letter!";
-    }else{
+    } else {
         $password_err = "Hmmm";
         header("Location: success.php");
         exit;
@@ -33,14 +33,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
-<?php
-    echo '<p>Pick a strong password to continue:</p>';
+
+<div>
+    <?php
+    echo '<h1>Pick a strong password to continue:</h1>';
     ?>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-    <label for="password">Password:
-        <input type="text" name="password" value="<?= $password ?>">
-    </label>
-    <input type="submit" name="submit" value="Submit"><br><br>
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+        <label for="password">🔑
+            <input type="text" name="password" value="<?= $password ?>">
+        </label>
+        <input type="submit" name="submit" value="Submit">
+    </form>
     <span class="error"><?= $password_err;?></span>
-</form>
+</div>
 </body>
