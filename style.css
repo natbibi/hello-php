@@ -5,11 +5,18 @@ body {
 }
 
 div {
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+
+input[type=text] {
+    height: 30px;
+    width: 400px;
+    font-size: 20px;
 }
 
 input[type=submit] {
