@@ -3,3 +3,22 @@ body {
     font-size: 20px;
     letter-spacing: 2px;
 }
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+input[type=submit] {
+    background: pink;
+    border: 3px solid pink;
+    border-radius: 5px;
+
+}
+
+span {
+    color: #ef315d;
+}
