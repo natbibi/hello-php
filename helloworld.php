@@ -1,3 +1,8 @@
+<?php
+$password = "";
+$password_err = "";
+?>
+
 <head>
     <title>PHP</title>
     <link rel="stylesheet" href="style.css" />
